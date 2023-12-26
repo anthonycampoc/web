@@ -1,0 +1,40 @@
+h1{
+  color: #fff;
+  font-size: 2.5em;
+  font-family: Lato;
+  width: 100%;
+  padding: 30px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  animation: enhance-header linear both;
+  animation-timeline: scroll(root);
+  animation-range: 0 50px;
+  z-index: 1;
+}
+@keyframes enhance-header {
+  to {
+  background-color: rgb(42, 43, 66 .4);
+  backdrop-filter: blur(6px);
+  font-size: 2rem;
+  }
+}
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.contenedor-principal {
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  columns: 2;
+  column-gap: 32px;
+  padding-top: 30px;
+  padding-bottom: 150px;
+}
