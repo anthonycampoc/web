@@ -10,7 +10,7 @@ export function Testimonio(props) {
     <div id={`testimonio-${props.id}`} className='contenedor-testimonio'>
       <img 
         className='imagen-testimonio'
-        //src={require(`../imgTest/testi-${props.imagen}.jpg`)}
+        src={require(`../imgTest/testi-${props.imagen}.jpg`)} //El problema dice que esta en esta linea de codigo
         alt={props.nombre}
       />
       <div className='contenedor-texto-testimonio'>
