@@ -17,7 +17,7 @@ export function CampoTestimonio() {
             años={testimonio.años}
             pais={testimonio.pais}
             cargo={testimonio.cargo}
-            //imagen={testimonio.imagen}
+            imagen={testimonio.imagen}
             empresa={testimonio.empresa}
             testimonio={testimonio.testimonio}
           />
