@@ -1,18 +1,22 @@
 import './stylesheets/App.css';
+import { Menu } from './componentes/Menu/menu.jsx';
 import { CampoTestimonio } from './componentes/testimonio/campotestimonio';
 import { BrowserRouter, Routes, Route } from  'react-router-dom';
-//import Navbar from './componentes/Nav/nav-principal.jsx';
 import { Error404 } from './componentes/error404/error404.jsx';
+import { Inicio } from './componentes/home/inicio.jsx' ;
 
 function App() {
   return (
     <div>
-        <BrowserRouter>
+      <BrowserRouter>
+      <Menu />
+        <div>
           <Routes>
-              <Route path='/' element={<h1>Inicio</h1>}/>
+              <Route path='/' element={<Inicio /> }/>
               <Route path='/testimonio' element={<CampoTestimonio />} />
               <Route path='*' element={<Error404 />} />
           </Routes>
+        </div>
         </BrowserRouter>
     </div>
   );
